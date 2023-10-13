@@ -1,0 +1,60 @@
+#office {
+  
+}
+#office .wrap {
+  max-width: 100%;
+  width: 100;
+}
+#office .wrap h2 {
+  
+}
+#office .wrap ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  height: 325px;
+}
+#office .wrap ul li {
+  width: 50%;
+  background-size: 100% 100%;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  background-repeat: no-repeat;
+}
+#office .wrap ul li:hover{
+  background-size: 110% 110%;
+}
+#office .wrap ul li:nth-child(1){
+  background-image: url(../img/office1.jpg);
+}
+#office .wrap ul li:nth-child(2){
+  background-image: url(../img/office2.jpg);
+}
+#office .wrap ul li a {
+  height: 100%;
+  color: white;
+}
+#office .wrap ul li a hgroup {
+  
+  text-align: center;
+}
+#office .wrap ul li a hgroup h3 {
+  font-size: 15px;
+  font-family: 'NotoSansKR', sans-serif;
+}
+#office .wrap ul li a hgroup h4 {
+  font-family: 'Titillium', 'NotoSansKR', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 2; 
+}
+#office .wrap ul li a span {
+  background-image: url(../img/arrow.svg);
+  display: block;
+  font-size: 0;
+  background-size: 52%;
+  width: 41px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,134 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  /*! animation-name: headerdown; */
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  z-index: 3;
+  transition: all 1s;
+  }
+.fixed{
+  position: fixed;
+  top: 0;
+}
+.fixed .wrap{
+  max-width: 100%;
+}
+.up{
+  top: -100px;
+}
+@keyframes headerdown{
+  0%{ /* 시작 */
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100%{ /* 끝 */
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+header .wrap {
+  background-color: white;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-weight: bold;
+  max-width: 1600px;
+  position: relative;
+  animation-name: wrapwidth;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  }
+@keyframes wrapwidth{
+   100%{
+   width: 100%;
+  }
+}
+header .wrap nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+header .wrap nav h1 {
+  font-weight: 400;
+  }
+header .wrap nav h1 a {
+  display: flex;
+  font-size: 17px;
+  align-items: end;
+  color: #17A0D6;
+  gap: 7px;
+  font-weight: bold;
+  }
+header .wrap nav h1 a span {
+  background-image: url(../img/kai.png);
+  width: 55px;
+  height: 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+  }
+header .wrap nav .gnb {
+  }
+header .wrap nav .gnb li {
+  }
+header .wrap nav .gnb li a {
+  padding: 0px 35px;
+  line-height: 3;
+  display: block;
+  border-top: 2px solid transparent;
+  font-weight: 400;
+  }
+header .wrap nav .gnb li a:hover{
+  color: #109AD6;
+  border-top: 2px solid #109AD6;
+  }
+header .wrap nav>div:nth-of-type(1) {
+  align-items: center;
+  gap: 20px;
+  font-size: 10px;
+  }
+header .wrap nav div.flex .lang {
+  }
+header .wrap nav div.flex .lang li {  
+  }
+header .wrap nav div.flex .lang li a {  
+  padding: 0 6px;
+  line-height: 2;
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 11px;
+  }
+header .wrap nav div.flex .lang li a:hover{
+  color: #109AD6;
+  }
+header .wrap nav div.flex .lang li:nth-child(1) a::after,header .wrap nav div.flex .lang li:nth-child(2) a::after{
+  content: "";
+  border-right: 1px solid #109AD6;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: calc( 50% - 3px );
+  }
+header .wrap nav div.flex .search button{
+  background-image: url(../img/search.svg);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  border: none;
+  background-color: transparent;
+  transform: translateX(-18px);
+  transition: all 1s;
+  }
+header .wrap nav div.flex .search button:hover{
+  background-image: url(../img/search_blue.svg);
+}
+header .wrap nav a.ham {
+  display: none;
+}

@@ -1,0 +1,42 @@
+div.wgnb {
+  position: absolute;
+  left: 0;
+  top: 89px;
+  width: 100%;
+  background-color: rgba(33, 33, 33, .95);
+  display: none;
+}
+
+div.wgnb div.center {
+  width: 813px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  transform: translateX(2px);
+}
+div.wgnb div.center div.wsub {
+  width: 132.5px;
+  padding: 30px 0;
+}
+div.wgnb div.center div.wsub:not(:last-child){
+  border-right:1px solid #302e2e; 
+}
+div.wgnb div.center div.wsub:nth-child(3){
+  width: 156.8px;
+}
+div.wgnb div.center div.wsub h2 {
+  
+}
+div.wgnb div.center div.wsub ul {
+  
+}
+div.wgnb div.center div.wsub ul li {
+  
+}
+div.wgnb div.center div.wsub ul li a {
+  color: #888;
+  line-height: 2.7;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}

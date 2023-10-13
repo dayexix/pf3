@@ -1,0 +1,134 @@
+#news {
+}
+#news div.wrap {
+  max-width: 1200px;
+}
+#news div.wrap h2 {
+  
+}
+#news div.wrap article {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#news div.wrap article a {
+  display: grid;
+  grid-template-columns: 99px 890px 130px;
+  grid-template-rows: 26px auto auto;
+  row-gap: 12px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  transition: all 1s;
+}
+#news div.wrap article a:hover{
+  border-color: #1CA6E5;
+}
+#news div.wrap article a h3 {
+  order: 2;
+}
+#news div.wrap article a h3 .noti{
+  
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  height: 29px;
+  padding: 0 17px;
+  margin-right: 16px;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.025em;
+  color: #1c9ad6;
+  border: 1px solid #1c9ad6;
+}
+#news div.wrap article a p {
+  order: 4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+#news div.wrap article a time {
+  order: 1;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: left;
+  align-items: center;
+  gap: 9px;
+  color: #ccc;
+  transition: all 1s;
+}
+#news div.wrap article a time:hover{
+  color: #1CA6E5;
+}
+#news div.wrap article a time span {
+  order: 1;
+  font-size: 46px;
+}
+#news div.wrap article a > span {
+  order: 3;
+  transform: translateY(38%);
+  transition: all 1s; 
+}
+#news div.wrap article a.noti > span{
+  
+}
+#news div.wrap article a:hover > span{
+  border-color: #1CA6E5;
+}
+#news div.wrap article a > span::before{
+  transition: all 1s;
+}
+#news div.wrap article a:hover > span::before{
+  border-color: #1CA6E5;
+}
+#news div.wrap > a.list {
+  display: block;
+  width: 80px;
+  border: 1px solid;
+  line-height: 3;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s;
+}
+#news div.wrap > a.list::before{
+  content: "";
+  background-image: url(../img/ham.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: -4px;
+  margin-right: 4px;
+}
+#news div.wrap > a.list:hover::before{
+  background-image: url(../img/ham1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#news div.wrap > a.list:hover::after{
+  width: 120%;
+}
+#news div.wrap > a.list::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 1s;
+  transform: skewX(-30deg);
+  transform-origin: 0 0;
+  z-index: -1;
+  background-color: black;
+  height: 100%;
+  display: inline-block;
+  top: 0;
+  width: 0;
+}
+#news div.wrap > a.list:hover{
+  background-color: black;
+  color: white;
+}

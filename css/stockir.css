@@ -1,0 +1,64 @@
+#stockir {
+  
+}
+#stockir div.wrap {
+  max-width: 1200px;
+}
+#stockir div.wrap article{
+  width: 50%;
+}
+#stockir div.wrap article.stock {
+  border-right: 1px solid #eee;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+#stockir div.wrap article h2{
+  
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#stockir div.wrap article.stock h2 {
+  order: 1;
+  grid-column: 1 / span 2;
+}
+#stockir div.wrap article.stock p.price {
+  color: #FF36AF;
+  order: 3;
+  grid-row: 2 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+}
+#stockir div.wrap article.stock time {
+  order: 2;
+  color: #aaa;
+  text-align: right;
+}
+#stockir div.wrap article.stock p.up {
+  order: 4;
+  color: #888;
+  text-align: right;
+}
+#stockir div.wrap article.ir {
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+#stockir div.wrap article.ir h2 {
+  
+}
+#stockir div.wrap article.ir ul {
+  
+}
+#stockir div.wrap article.ir ul li {
+  
+}
+#stockir div.wrap article.ir ul li a {
+  display: flex;
+  justify-content: space-between;
+}
+#stockir div.wrap article.ir ul li time {
+  
+}

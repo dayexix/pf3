@@ -1,0 +1,106 @@
+section#green {
+  
+}
+section#green .wrap {
+  max-width: 1200px;
+}
+section#green .wrap h2 {
+  margin-bottom: 80px;
+}
+section#green .wrap ul {
+  gap: 20px;
+}
+
+section#green .wrap ul li { 
+  width: calc(100% / 3);
+}
+.current{
+  border: 1px solid red;
+}
+section#green .wrap ul li::before{
+  content: "";
+  width: 100%;
+  height: 450px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#green .wrap ul li:nth-child(1)::before{
+  background-image: url(../img/gr1.jpg);
+}
+section#green .wrap ul li:nth-child(2)::before{
+  background-image: url(../img/gr2.jpg);
+}
+section#green .wrap ul li:nth-child(3)::before{
+  background-image: url(../img/gr3.jpg);
+}
+section#green .wrap ul li h3 {
+  line-height: 3;
+  transform: translateY(5px);
+}
+section#green .wrap ul li p {
+  line-height: 2;
+}
+section#green .wrap ul li p span {
+  
+}
+section#green .wrap a.siteview {
+  border: 1px solid;
+  padding: 15px;
+  width: 180px;
+  display: block;
+  box-sizing: border-box;
+  margin-left: calc(100% / 3 * 2 + 10px);
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#green .wrap a.siteview:hover{
+  color: white;
+  background-color: black;
+}
+section#green .wrap a.siteview::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 1s;
+  transform: skewX(-30deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  background-color: black;
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  top: 0;
+}
+section#green .wrap a.siteview span{
+  
+  position: relative;
+}
+section#green .wrap a.siteview:hover::before{
+  width: 120%;
+}
+section#green .wrap a.siteview::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/login.svg);
+  background-size: contain;
+  transition: all 1s;
+  position: relative;
+  background-repeat: no-repeat;
+}
+section#green .wrap a.siteview:hover::after{
+  background-image: url(../img/login2.svg);
+}
+
+
+
+
+
+
